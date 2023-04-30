@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main(){
   runApp(fontawesome());
@@ -26,10 +27,19 @@ class fontAwesomeIcon extends StatelessWidget{
         child: Container(
           width: 300,
           height: 250,
-          color: Colors.pink,
+          decoration: BoxDecoration(borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(50),bottomRight: Radius.circular(50)),
+            color: Colors.green),
+          child: Center(child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FaIcon(FontAwesomeIcons.apple,size: 50,color: Colors.white,),
+              SizedBox(width: 30),
+              FaIcon(FontAwesomeIcons.microsoft,size: 50,color: Colors.white,)
+            ],
+          )) ,
         ),
-      ),
-    );
+      ));
   }
 }
 
