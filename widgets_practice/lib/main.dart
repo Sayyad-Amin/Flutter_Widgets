@@ -33,6 +33,14 @@ class positionedwidget extends StatelessWidget {
                 height: 100,
                 color: Colors.deepPurple,
               ),
+            ),
+            Positioned(
+              bottom: 30,
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.orange,
+              ),
             )
           ],
         )
